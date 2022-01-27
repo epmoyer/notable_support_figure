@@ -9,8 +9,8 @@ modified: 2022-01-27T19:26:28.609Z
 
 ```pikchr
 $percent_start = 0.29
-$percent_current = 0.33
-$donation1_current = 25
+$percent_current = 0.35
+$donation1_current = 35
 $donation1_max = 100
 
 $color_thermometer = 0xe0e0e0
@@ -40,9 +40,9 @@ Baseline: box width $baseline_width height $height fill $color_baseline with .w 
 text "$0" with .e at $margin left of Thermometer.w
 text "$580" with .w at $margin right of Thermometer.e
 // Bubbles
-circle "$170" "(29%)" with .c at $bubble_margin heading 180+45 from Baseline.se fill $color_baseline
+circle "$165" "(29%)" with .c at $bubble_margin heading 180+45 from Baseline.se fill $color_baseline
 arrow from previous.ne to Baseline.se
-circle "$195" "(33%)" with .c at $bubble_margin heading 180-45 from Current.se fill $color_current
+circle "$200" "(35%)" with .c at $bubble_margin heading 180-45 from Current.se fill $color_current
 arrow from previous.nw to Current.se
 
 // ---------------
@@ -54,7 +54,7 @@ text "$0" with .e at $margin left of T2.w
 text "$100" with .w at $margin right of T2.e
 $donation1_width = $width * $donation1_current / $donation1_max
 Donation1: box width $donation1_width height $height fill $color_donation with .w at T2.w
-text "$25" with .n at $margin/2  south of Donation1.se 
+text "$35" with .n at $margin/2  south of Donation1.se 
 
 // ---------------
 // Donation #2
